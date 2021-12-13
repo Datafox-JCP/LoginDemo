@@ -102,7 +102,8 @@ struct ContentView: View {
                     .font(.title3)
                     .fontWeight(.semibold)
             }
-            .padding(EdgeInsets(top: 10, leading: 110, bottom: 10, trailing: 110))
+            .padding()
+            .frame(maxWidth: .infinity)
             .foregroundColor(.white)
             .background(Color("Color1"))
             .cornerRadius(8)
@@ -131,5 +132,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 13 mini")
     }
 }
