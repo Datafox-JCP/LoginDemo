@@ -42,21 +42,6 @@ class LoginViewModel: ObservableObject {
     }
     
     
-    var emailPrompt: String {
-        isEmailCriteriaValid ?
-            ""
-            :
-            "Enter a valid email address"
-    }
-    
-    var passwordPrompt: String {
-        isPasswordCriteriaValid ?
-            ""
-            :
-            "Must be at least 8 characters containing at least one number and one letter and one special character."
-    }
-    
-    
     func login() {
         print("Logging in \(email).")
         email = ""
