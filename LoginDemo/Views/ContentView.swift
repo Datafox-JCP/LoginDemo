@@ -14,6 +14,7 @@ struct ContentView: View {
     // MARK: - VIEW
     var body: some View {
         VStack {
+            // MARK: Logo image
             Image("edvora")
                 .padding()
             
@@ -48,9 +49,12 @@ struct ContentView: View {
                         // Dont allow more than 8
                         viewModel.password = String(value.prefix(8))
                     })
-                Image(systemName: "eye.fill")
-                    .foregroundColor(Color("Border"))
-                    .font(.headline)
+                Button(action: {}, label: {
+                    Image(systemName: "eye.fill")
+                        .foregroundColor(Color("Border"))
+                        .font(.headline)
+                })
+                
             } // HStack Password
             .padding(14)
             .overlay(
@@ -66,6 +70,7 @@ struct ContentView: View {
                     .foregroundColor(Color("Icons"))
                     .font(.headline)
                 TextField("Email address", text: $viewModel.email)
+                    .autocapitalization(.none)
                     .keyboardType(UIKeyboardType.emailAddress)
             } // HStack Email
             .padding(14)
