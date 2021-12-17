@@ -2,7 +2,7 @@
 //  LoginViewModel.swift
 //  LoginDemo
 //
-//  Created by Juan Carlos Pazos on 16/12/21.
+//  Created by Juan Carlos Pazos on 17/12/21.
 //
 /*
  Login validation view - Evaluation of coding skills for job application
