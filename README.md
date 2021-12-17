@@ -11,6 +11,8 @@
 5. Validations for username (should not have spaces and no upper case alphabet)
 6. The app must be responsive for all devices (iPhone SE, iPhone 13, iPad)
 
+![Use Combine](/Images/CombineLoginSample.png)
+
 📌 Use MVVM approach
 
 📌 Reuse input fields using EntryField file
