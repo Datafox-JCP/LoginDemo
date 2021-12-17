@@ -27,3 +27,4 @@
 📌 Login button only activates if all conditions are complete
 
 [Support this](.github/FUNDING.yml)
+ko_fi: # datafoxsoftware
