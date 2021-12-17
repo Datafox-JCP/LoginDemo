@@ -1,6 +1,6 @@
 # LoginDemo
 ## Login app screen
-###### valuation of coding skills for job application
+###### Evaluation of coding skills for job application
 
 > We would like to understand a few things about your approach to code, projects, and the way you build them.
 
