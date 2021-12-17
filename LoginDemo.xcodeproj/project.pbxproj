@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62407FF276BE51700763483 /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62407FE276BE51700763483 /* EntryField.swift */; };
 		C6C6D0082766DD6700B6C48A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D0072766DD6600B6C48A /* Extensions.swift */; };
 		C6D2243E2765297900CBF30E /* LoginDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2243D2765297900CBF30E /* LoginDemoApp.swift */; };
 		C6D224402765297900CBF30E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2243F2765297900CBF30E /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C62407FE276BE51700763483 /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
 		C6C6D0072766DD6600B6C48A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C6D2243A2765297900CBF30E /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D2243D2765297900CBF30E /* LoginDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDemoApp.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				C6D2243F2765297900CBF30E /* ContentView.swift */,
+				C62407FE276BE51700763483 /* EntryField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62407FF276BE51700763483 /* EntryField.swift in Sources */,
 				C6D224402765297900CBF30E /* ContentView.swift in Sources */,
 				C6D2243E2765297900CBF30E /* LoginDemoApp.swift in Sources */,
 				C6D2244C27652B4C00CBF30E /* LoginViewModel.swift in Sources */,

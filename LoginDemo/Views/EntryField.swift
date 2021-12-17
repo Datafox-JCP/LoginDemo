@@ -1,8 +1,8 @@
 //
-//  Extensions.swift
+//  EntryField.swift
 //  LoginDemo
 //
-//  Created by Juan Carlos Pazos on 12/12/21.
+//  Created by Juan Carlos Pazos on 16/12/21.
 //
 /*
  Login validation view - Evaluation of coding skills for job application
@@ -18,12 +18,49 @@
  
  */
 
-import Foundation
+import SwiftUI
 
-extension String {
-    // Extend trim function to remove inner spaces
-    func trim() -> String {
-        return self.trimmingCharacters(in: CharacterSet.whitespaces)
+struct EntryField: View {
+    // MARK: - Properties
+    var sfSymbolName: String
+    var placeholder: String
+    var prompt: String
+    @Binding var field: String
+    var isSecure = false
+    
+    // MARK: - View
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                // MARK: SF Symbol
+                Image(systemName: sfSymbolName)
+                    .foregroundColor(.gray)
+                    .font(.headline)
+                    .frame(width: 20)
+                // MARK: Can use SecureField or TextField
+                if isSecure {
+                    SecureField(placeholder, text: $field)
+                } else {
+                    TextField(placeholder, text: $field)
+                }
+            } // HStack
+            .autocapitalization(.none)
+            .padding(8)
+            .background(Color(.secondarySystemBackground))
+            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
+            // MARK: Prompt (for indications)
+            Text(prompt)
+                .fixedSize(horizontal: false, vertical: true)
+                .font(.caption)
+                .foregroundColor(.gray)
+        } // VStack
+    }
+}
+
+// MARK: - Preview
+struct EntryField_Previews: PreviewProvider {
+     static var previews: some View {
+        EntryField(sfSymbolName: "envelope.fill", placeholder: "Email Address", prompt: "Enter a valid email address", field: .constant(""))
     }
 }
 
