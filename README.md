@@ -25,3 +25,5 @@
 📌 Instructions are hidden when the validation is passed
 
 📌 Login button only activates if all conditions are complete
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B17I7VH)
